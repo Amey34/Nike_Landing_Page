@@ -413,17 +413,12 @@
   color: black;
 }
 
-#n2.navbar-nav {
-  flex-direction: row;
-}
-
 #n2 {
   position: relative;
   z-index: 1050;
   transition: transform 0.3s ease, opacity 0.3s ease;
   will-change: transform, opacity;
 }
-
 #n2.fixed-on-scroll {
   position: fixed;
   top: 0;
@@ -435,10 +430,12 @@
   transform: translateY(0);
   opacity: 1;
 }
-
 #n2.slide-up {
   transform: translateY(-100%);
   opacity: 0;
+}
+#n2.navbar-nav {
+  flex-direction: row;
 }
 
 .f2 .dropdown-header {
