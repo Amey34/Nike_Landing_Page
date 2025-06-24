@@ -3,6 +3,11 @@
   font-family: Helvetica, Arial, sans-serif;
   display: none;
 }
+@media (min-width: 945px) {
+  #n1 {
+    display: block;
+  }
+}
 
 .bi-heart {
   padding: 0.15rem 0.3rem;
@@ -23,14 +28,29 @@
 #n2icons1 {
   display: none;
 }
+@media (min-width: 945px) {
+  #n2icons1 {
+    display: flex;
+  }
+}
 
 #n2icons2 {
   display: none;
+}
+@media (max-width: 944px) {
+  #n2icons2 {
+    display: flex;
+  }
 }
 
 #ul2 {
   display: none;
   font-weight: 550;
+}
+@media (min-width: 945px) {
+  #ul2 {
+    display: flex;
+  }
 }
 
 #offcanvas-toggler {
@@ -38,11 +58,21 @@
   padding: 0.2rem;
   color: black;
 }
+@media (min-width: 945px) {
+  #offcanvas-toggler {
+    display: none;
+  }
+}
 
 #sidebar {
   top: 0 !important;
   z-index: 2000;
   width: 320px;
+}
+@media (min-width: 945px) {
+  #sidebar {
+    display: none;
+  }
 }
 
 .offcanvas-body .b1,
@@ -259,6 +289,12 @@
 }
 .overlap-button:hover {
   background-color: #BEBEBE;
+}
+@media (max-width: 944px) {
+  .overlap-button {
+    bottom: 5%;
+    left: 5%;
+  }
 }
 
 .custom-image-card {
@@ -542,41 +578,4 @@
 #imageScroll1,
 #imageScroll2 img {
   cursor: pointer;
-}
-
-@media (min-width: 945px) {
-  #n1 {
-    display: block;
-  }
-}
-@media (min-width: 945px) {
-  #ul2 {
-    display: flex;
-  }
-}
-@media (min-width: 945px) {
-  #n2icons1 {
-    display: flex;
-  }
-}
-@media (max-width: 944px) {
-  #n2icons2 {
-    display: flex;
-  }
-}
-@media (min-width: 945px) {
-  #sidebar {
-    display: none;
-  }
-}
-@media (min-width: 945px) {
-  #offcanvas-toggler {
-    display: none;
-  }
-}
-@media (max-width: 944px) {
-  .overlap-button {
-    bottom: 5%;
-    left: 5%;
-  }
 }/*# sourceMappingURL=styles.css.map */

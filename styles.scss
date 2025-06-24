@@ -1,9 +1,16 @@
 @import 'colors';
+@import 'mixins';
 
 #n1 {
     background-color: $gray1;
     font-family: Helvetica, Arial, sans-serif;
     display: none;
+
+    @include custom(alg) {
+
+        display: block;
+
+    }
 }
 
 .bi-heart {
@@ -30,16 +37,28 @@
 
 #n2icons1 {
     display: none;
+
+    @include custom(alg) {
+        display: flex;
+    }
 }
 
 #n2icons2 {
     display: none;
+
+    @include custom(blg) {
+        display: flex;
+    }
 }
 
 
 #ul2 {
     display: none;
     font-weight: 550;
+
+    @include custom(alg) {
+        display: flex;
+    }
 }
 
 
@@ -47,12 +66,20 @@
     border: none;
     padding: 0.2rem;
     color: black;
+
+    @include custom(alg) {
+        display: none;
+    }
 }
 
 #sidebar {
     top: 0 !important;
     z-index: 2000;
     width: 320px;
+
+    @include custom(alg) {
+        display: none;
+    }
 }
 
 .offcanvas-body {
@@ -299,6 +326,11 @@
 
     &:hover {
         background-color: $gray6;
+    }
+
+    @include custom(blg) {
+        bottom: 5%;
+        left: 5%;
     }
 }
 
@@ -632,48 +664,4 @@
 #imageScroll1,
 #imageScroll2 img {
     cursor: pointer;
-}
-
-@media (min-width:945px) {
-    #n1 {
-        display: block;
-    }
-}
-
-
-@media (min-width:945px) {
-    #ul2 {
-        display: flex;
-    }
-}
-
-@media (min-width:945px) {
-    #n2icons1 {
-        display: flex;
-    }
-}
-
-@media (max-width:944px) {
-    #n2icons2 {
-        display: flex;
-    }
-}
-
-@media (min-width:945px) {
-    #sidebar {
-        display: none;
-    }
-}
-
-@media (min-width:945px) {
-    #offcanvas-toggler {
-        display: none;
-    }
-}
-
-@media (max-width:944px) {
-    .overlap-button {
-        bottom: 5%;
-        left: 5%;
-    }
 }
